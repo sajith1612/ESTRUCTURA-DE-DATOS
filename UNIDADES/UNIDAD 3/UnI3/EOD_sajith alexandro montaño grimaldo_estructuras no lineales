@@ -1,0 +1,21 @@
+
+# UNIDAD 3
+
+
+
+Recursividad:
+Es un recurso poderoso para expresar soluciones simples y naturales a ciertos problemas. Algunos problemas son naturalmente recursivos, otros no. Un objeto recursivo es aquel que aparece en la 
+definición de sí mismo, así como el que se llama a sí mismo.
+
+Arboles: 
+Los árboles son estructuras de datos muy similares a las listas doblemente enlazadas, 
+en el sentido que tienen punteros que apuntan a otros elementos,
+ pero no tienen una estructura lógica de tipo lineal o secuencial como aquellas, sino ramificada. Tienen aspecto de árbol, 
+ de ahí su nombre.
+
+
+ Grafos:
+ Los grafos son estructuras de datos, es decir, tipos de datos abstractos,
+  comúnmente los grafos son utilizados para el modelado de problemas. 
+  Un grafo es un conjunto no vacıo de objetos o entes fısicos que tienen relación entre ellos.
+
