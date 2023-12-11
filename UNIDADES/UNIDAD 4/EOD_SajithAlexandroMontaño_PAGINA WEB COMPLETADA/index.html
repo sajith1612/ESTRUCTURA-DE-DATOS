@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>ESTRUCTURA DE BASES DE DATOS</title>
+
+    <!-- Agrega el enlace al archivo CSS de Bootstrap v5.0 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css">
+
+    <!-- Agrega tu propio archivo de estilos CSS -->
+    <style>
+        /* Agrega un fondo general a la página */
+        body {
+            background-image: url('https://e1.pxfuel.com/desktop-wallpaper/614/153/desktop-wallpaper-7-tech-technology.jpg');
+            background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+            background-position: center center; /* Centra la imagen */
+            color: #ffffff; /* Cambia el color del texto a blanco o el que prefieras */
+        }
+
+        /* Agrega el fondo al encabezado (barra de navegación) */
+        .navbar {
+            background-image: url('https://c4.wallpaperflare.com/wallpaper/989/501/216/aparato-musica-tecnologia-wallpaper-preview.jpg');
+            background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+            background-position: center center; /* Centra la imagen */
+        }
+
+        /* Cambia el color del texto del título */
+        h1 {
+            color: rgb(247, 247, 247)/* Cambia el color a rojo o el que prefieras usando un código de color o nombre */
+        }
+
+        /* Agrega un fondo al área del título */
+        .titulo-section {
+            background-image: url('https://img.freepik.com/vector-premium/fondo-tecnologia-red-hexagono-abstracto-azul-tecnologia-hexagono-futurista_528453-279.jpg');
+            background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+            background-position: center center; /* Centra la imagen */
+            padding: 50px; /* Añade espacio alrededor del título para mejorar la legibilidad */
+            color: #ffffff; /* Cambia el color del texto a blanco o el que prefieras */
+            text-align: center; /* Centra el texto dentro del área del título */
+        }
+
+        /* Personaliza el color del texto si es necesario */
+        .navbar,
+        .navbar-light .navbar-nav .nav-link {
+            color: #ffffff; /* Cambia el color del texto a blanco o el que prefieras */
+        }
+
+        /* Estilo para las imágenes junto a los enlaces */
+        .redes-img {
+            width: 20px; /* Tamaño de las imágenes */
+            height: auto;
+            margin-right: 5px; /* Margen a la derecha para separar la imagen del texto */
+        }
+    </style>
+
+    <!-- Agrega el enlace al archivo JavaScript de Bootstrap v5.0 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Agrega el enlace al archivo JavaScript de Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <!-- ... (contenido de la barra de navegación omitido para brevedad) ... -->
+    </nav>
+
+    <!-- Contenido principal -->
+    <div class="container mt-4">
+
+      <p>Nombre: Sajith Alexandro Montaño Grimaldo</p>
+      <p>Correo Electrónico: alejandromontano1612@gmail.com</p>
+      <p>Universidad: Tecnologico de pabellon de artaga</p>
+      <p>No.contol: 221050156</p>
+      <p>CEL: 4651540017</p>
+
+    <!-- Contenido principal -->
+    <div class="container mt-4">
+        <h2>ENCUENTRANOS EN NUESTRAS PÁGINAS</h2>
+        <!-- Enlace a Facebook con imagen -->
+        <p>
+            <img src="https://seeklogo.com/images/F/facebook-new-2023-logo-4221611926-seeklogo.com.png" alt="Icono de Facebook" class="redes-img">
+            Puedes encontrarnos en Facebook: <a href="https://www.facebook.com/profile.php?id=100010909423853" target="_blank">Enlace a Facebook</a>
+        </p>
+        <!-- Enlace a Tiktok con imagen -->
+        <p>
+            <img src="https://fatimamartinez.es/wp-content/uploads/2022/03/LOGO-TIKTOK-png.png" alt="Icono de Tiktok" class="redes-img">
+            Puedes encontrarnos en Tiktok: <a href="https://www.tiktok.com/@alexandro16123?is_from_webapp=1&sender_device=pc" target="_blank">Enlace a Tiktok</a>
+        </p>
+
+        <!--Enlace a Git con imagen -->
+        <p> <img src="https://www.bleepstatic.com/content/hl-images/2022/04/08/GitHub___headpic.jpg" alt="Icono de Git" class="redes-img">
+            Puedes encontrarnos en Git: <a href="https://github.com/sajith1612" target="_blank">Enlace a Git</a></p>
+
+        <!--Nombre clave en Xbox one-->
+        <img src="data:image/png;base64,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" alt="Icono de Git" class="redes-img">
+        Puedes encontrarnos en Xbox One: <a href="https://account.xbox.com/es-mx/Profile?xr=mebarnav&rtc=1&csrf=hhVpb2BiofhouTfyv4H0TiyZ1mSlbh3cC31vHE2wVr8pv1oUq9oYWggiVLCNdWw11wu8fQ3OmAtyoxw87PsVkCM9Ry01&wa=wsignin1.0" target="_blank">Enlace a XBOX ONE</a></p>
+                
+    </div>
+
+    <!-- Sección de habilidades -->
+    <div class="container mt-4">
+        <h2>HABILIDADES</h2>
+        <!-- Lista de habilidades -->
+        <ul>
+            <li>Desarrollo Web</li>
+            <li>Bases de Datos</li>
+            <li>Programación en Python</li>
+        </ul>
+    </div>
+
+</div>
+
+ <!-- Pie de página -->
+ <footer class="container mt-4">
+    <p>&copy; 2023 Sajith Alexandro Montaño Grimaldo. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+
+</html>
+
+        <!-- Agrega un fondo al área del título -->
+        <section class="titulo-section">
+            <!-- Cambia el color del título -->
+            <h1>ESTRUCTURA DE BASE DE DATOS</h1>
+        </section>
+         <!-- Contenido adicional -->
+         <p>BIENVENIDOS A MI PÁGINA WEB Y HABLAREMOS DE LOS SIGUIENTES TEMAS.</p>
+        
+         <p>ARBOLES 1.<a href="https://posgrados.inaoep.mx/archivos/PosCsComputacionales/Curso_Propedeutico/Programacion_Estructuras_Datos/Capitulo_9_Arboles.pdf" target="_blank">LINK</a></p>
+         <p>GRAFOS 2.<a href="https://www.oracle.com/mx/autonomous-database/what-is-graph-database/" target="_blank">LINK</a></p>
+ 
+
+<!-- Otro bloque de contenido -->
+<div>
+  <h3>¿QUE SON LOS ARBOLES?</h3>
+  <p>Se les llama estructuras dinámicas, porque las mismas
+    pueden cambiar tanto de forma como de tamaño durante la
+    ejecución del programa.
+    Y estructuras no lineales porque cada elemento del árbol
+    puede tener más de un sucesor Los árboles son considerados las estructuras de datos no
+    lineales y dinámicas de datos muy importantes del área de
+    computación.
+    ❖Los árboles son muy utilizados en informática como un
+    método eficiente para búsquedas grandes y complejas.
+    ❖Casi todos los sistemas operativos almacenan sus archivos
+    en árboles o estructuras similares a árboles.</p>
+    <P>¿TIPOS DE ARBOLES?</P>
+    <p>Arboles binarios.
+      • Arboles binarios distintos
+      • Arboles binarios similares
+      • Arboles binarios equivalentes
+      • Arboles binarios completos
+      • Arboles binarios llenos
+      • Arboles binarios degenerados
+      • Arboles binarios de búsqueda
+      • Arboles equilibrados</p>
+      <p>Arboles multicaminos
+        • Arboles-B
+        • Arboles B+
+        • Arboles 2-4</p>
+        <p>¿CARACTERISTICAS DE LOS ARBOLES?</p>
+        <P>Nodos. Se le llama nodo a cada elemento que contiene el árbol</P>
+        <p>Nodo padre. Se utiliza este término para llamar a todos aquellos nodos que
+            tienen al menos un hijo.
+            </p>
+            <p>Nodo hijo. Los hijos son todos aquellos nodos que tienen un padre.</p>
+            <p>Nodo hermano. Los nodos hermanos son aquellos nodos que comparten un
+                mismo padre en común dentro de la estructura.</p>
+                <p>EJEMPLOS DE UN ARBOL.</p>
+              <img src="E:\CARPETA ALEX\Capturas de pantalla\Captura de pantalla (171).png" alt="" srcset="">
+              <img src="E:\CARPETA ALEX\Capturas de pantalla\Captura de pantalla (172).png" alt="" srcset="">
+                <img src="https://www.oscarblancarteblog.com/wp-content/uploads/2014/08/nodospadrehijohermano.png" alt="" srcset="">
+                <p>SI QUIERES SAVER MAS DE LOS ARBOLES INGRESA AL LINK.<a href="https://www.uv.mx/personal/ermeneses/files/2021/08/Clase8-Arboles.pdf" target="_blank">LINK</a></p>  
+                <video width="640" height="360" controls>
+                    <source src="E:\videos\Y2meta.app - ¿Qué son y cómo funcionan los árboles.mp4" type="video/mp4">
+                  
+                </video>
+             <p>¿QUE SON LOS GRAFOS</p>
+             <p>Lo primero que debes saber es que un grafo es una estructura matemática que permite representar problemas cotidianos de manera gráfica. Además, la teoría de grafos permite representar un sólo tipo de relación (representación simple), pero también permite representar más de un tipo (en ese caso, se llamaría múltiple).
+
+                Incluso eminencias como el fundador de Facebook, Mark Zuckenberg, han hablado de “social graph” o grafos sociales para representar las conexiones y relaciones que tienen los usuarios de la red social.
+                
+                La teoría de grafos es una rama de las matemáticas, la misma rama que también se usa en las ciencias computacionales. Se fundamenta en las matemáticas tanto discretas como aplicadas. De esta manera se consigue englobar diferentes conceptos.</p>
+
+                <p>¿Aplicar la teoría de grafos a las redes sociales?</p>
+                <p>Pensemos en la estrategia comercial que llevaría a cabo cualquier empresa de telecomunicaciones que busca conocer la composición de los vínculos. Le interesaría saber con qué personas hablamos habitualmente y de esta forma adaptar su estrategia comercial para ofrecer ofertas y/o tarifas personalizadas.</p>
+                <p>Además de esto, aplicar los grafos a las redes sociales, puede funcionar para adaptar los productos a las necesidades reales, haciéndolos aparecer en el momento idóneo.</p>
+                <p>Cuando hablamos de grafos aplicados a redes sociales lo más común es que se usen para “detectar comunidades”. Gracias a los algoritmos podemos ver características, atributos y relaciones que coinciden dentro de un grupo. Cuando se analizan los subgrafos, podremos ver lo vértices que están más relacionados entre sí, y además cómo se relacionan con el resto de vértices.
+
+                    Si miramos el gráfico anterior, podemos ver que se han detectado tres comunidades diferentes, en ellas podemos presuponer que todos los miembros de la misma comunidad tienen características u atributos que coinciden.</p>
+
+                    <img src="https://ccia.ugr.es/~jfv/ed1/c++/cdrom4/paginaWeb/grafos_archivos/image002.gif" alt="" srcset="">
+                    <img src="https://ccia.ugr.es/~jfv/ed1/c++/cdrom4/paginaWeb/grafos_archivos/image001.jpg" alt="">
+                    <img src="https://www.researchgate.net/publication/319121538/figure/fig18/AS:527470203019267@1502770104487/Figura-2-Grafo-Starwars-para-ilustrar-ejemplos-de-Generalized-Graph-Query-Con-el-fin-de.png" alt="" srcset="">
+                    <p>SI QUIERES SAVER MAS DE LOS GRAFOS INGRESA AL LINK.<a href="https://opensistemas.com/la-teoria-de-grafos-aplicada-al-analisis-de-redes-sociales/#:~:text=Lo%20primero%20que%20debes%20saber,caso%2C%20se%20llamaría%20múltiple." target="_blank">LINK</a></p>  
+                    
+                    <video width="640" height="360" controls>
+                        <source src="E:\videos\Y2meta.app - ¿Qué diablos es un Grafo.mp4" type="video/mp4">
+                        
+                    </video>
+                    
+                
+                
+                
+                
+                
+                
+                
+                <p>¿QUE ES LA RECURSIVIDAD?</p>
+                    <P>Es una forma de expresar un procedimiento en base a su propia definición, reduciéndolo de manera recurrente a la mínima expresión. ó se invocan a sí mismos. (caso base).</P>
+                    <p>¿CARACTERISTICAS?</p>
+                    <p>La recursividad es una característica de algunos procesos u objetos que hacen referencia a sí mismos en su definición.
+                        Las funciones recursivas se invocan a sí mismas en el cuerpo de la función.
+                        La recursión se puede usar para abstraer repetición y expresar iteración a través de funciones.</p>
+                        <img src="https://www.campusmvp.es/recursos/image.axd?picture=Recursividad-Portada.png" alt="" srcset="">
+                        
+                        <img src="https://image.slidesharecdn.com/curso-recursividad-151205231755-lva1-app6891/85/curso-recursividad-12-320.jpg?cb=1668438703" alt="" srcset="">
+                        <p>SI QUIERES SAVER MAS DE LAS RECURSIVIDAD INGRESA AL LINK.<a href="https://www.infor.uva.es/~mserrano/EDI/cap1#:~:text=La%20recursividad%20es%20la%20propiedad,puede%20llamarse%20a%20sí%20mismo.&text=Utilizando%20la%20recursividad%2C%20la%20resolución,igual%20pero%20algo%20menos%20complejo.&text=–%20Cada%20nueva%20formulación%20estamos%20más,caso%20final%20(o%20base)." target="_blank">LINK</a></p>  
+                        <p>RECURSIVIDAD<a href="https://learn.microsoft.com/es-es/sql/relational-databases/sqlxml-annotated-xsd-schemas-using/specifying-depth-in-recursive-relationships-by-using-sql-max-depth?view=sql-server-ver16"target="_blank">LINK</a></p>  
+                       
+                       
+                        <!-- Agrega el elemento de video -->
+    <video width="640" height="360" controls>
+        <source src="E:\videos\Y2meta.app - CÓMO FUNCIONA LA RECURSIVIDAD.mp4" type="video/mp4">
+        
+
+    </video>
+                    <p>¿QUE ES LINUX?</p>
+                    <p>Linux es el nombre que reciben una serie de sistemas operativos de tipo Unix bajo la licencia GNU GPL (General Public License o Licencia Pública General de GNU) que son su mayoría gratuitos y con todo lo necesario para hacer funcionar un PC, con la peculiaridad de que podemos instalar un sistema muy ligero e ir añadiendo todo lo necesario posteriormente o según lo vayamos necesitando.
+
+                        Linux es multiusuario, multitarea y multiplataforma, además puede funcionar en modo consola para un consumo mínimo de recursos, pero que también podemos hacer funcionar con entorno gráfico, instalando uno mediante comandos de terminal o adquiriendo un paquete en el que venga uno incluido. Si quieres probarlo puedes usar una máquina virtual antes de instalarlo en tu PC.
+                        
+                        Al ser código libre podemos utilizarlo, copiarlo, modificarlo y redistribuirlo libremente para cualquier uso que queramos darle, pero siempre bajo los términos de la licencia GPL de GNU. Un ejemplo es el caso de Android, que usa el núcleo Linux pero que en este caso no tiene componentes GNU sino que está personalizado para los teléfonos móviles o tablets que lo usan.
+                        
+                        Linux comenzó su andadura en el mundo del software libre por el año 1980 con la idea de crear un sistema operativo libre pero basado en Unix, inicialmente llamado Minix, pero que a su inventor Linus Torvalds no le gustó y acabó creando el suyo propio por el año 1991. Linus Torvalds junto con Richard Stallman han contribuido enormemente en el desarrollo de paquetes con licencia GNU han creado la Free Software Fundation que promueve el software libre y la Linux Foundation, de la que también forma parte Microsoft. El símbolo que representa a GNU es un Ñu y para Linux el simpático pingüino llamado Tux.
+                        
+                        Realmente Linux es el nombre que recibe el núcleo o kernel de este sistema operativo, para los entendidos en la materia las diferentes versiones de este sistema operativo son denominados comúnmente distros, de distribuciones, que básicamente son este núcleo del sistema al que se le han añadido aplicaciones y programas para construir un sistema operativo completo con muchas funciones. Hay distribuciones de todo tipo, en este artículo hemos recopilado las mejores distribuciones de Linux.</p>
+
+                        <p>¿PARA QUE SIRVE?</p>
+                        <p>Linux sirve para hacer funcionar todo el hardware de un PC, ya que un ordenador no puede funcionar sin un sistema operativo y Linux es un sistema operativo gratuito. Linux está en muchos de los ordenadores que se venden sin sistema operativo, pero esto no es legal en España ya que un PC sin sistema operativo no es un PC funcional, muchos fabricantes optan por añadir una versión o distro de Linux.
+
+                            Este sistema operativo también es conocido por controlar superordenadores o servidores que es donde en realidad Linux toma importancia. La mayoría de los supercomputadores más importantes del mundo usan algún sistema GNU/Linux, por lo que también sirve para controlar superordenadores con tareas específicas, gracias a su capacidad de personalización.
+                            
+                            Este sistema operativo Linux también es muy usado como un sistema operativo Live, esto es para arrancar un PC sin necesidad de instalar ningún sistema operativo ni utilizar el del disco duro integrado. Este sistema, que suele ser bastante ligero, se carga en memoria y es de gran utilidad para la recuperación de datos y gestión de particiones en discos duros cuando ocurre una catástrofe, en este caso con alguna utilidad integrada, en alguna distro de Linux que se pueda ejecutar de manera Live, podemos intentar arreglar el desastre ocasionado o gestionar las particiones con los discos duros de una manera similar a como se hace con Diskpart, pero sin necesidad de instalar nada.
+                            
+                            Otra de las utilidades de un sistema Linux Live es la auditoría de redes Wi-Fi, aunque fue más usado para descifrar contraseñas de redes Wi-Fi no muy seguras y conseguir internet gratis. Fue muy extendido cuando estalló el boom de las redes Wi-Fi domésticas, en muy pocos minutos, con los conocimientos necesarios (aunque luego salieron mil tutoriales en internet) y una distribución Linux live que ejecutaba la aplicación WiFiSlax, podías conseguir la contraseña de algunas redes a las que podías acceder a su conexión a internet o incluso a sus datos si tenía estos compartidos.
+                            
+                            Linux está presente en multitud de aparatos que usamos en el día a día, como móviles Android, NAS, algunos routers, televisiones, TV Box, calculadoras o hasta el mismísimo colisionador de hadrones funciona con una distribución específica llamada Scientific Linux que finalmente ha sido sustituida por CentOS. Microsoft también ha empezado a incluir el núcleo de este sistema en Windows 10.</p>
+                            <p>SI QUIERES SAVER MAS DE LINUX INGRESA AL LINK.<a href="https://www.geeknetic.es/Linux/que-es-y-para-que-sirve" target="_blank">LINK</a></p>  
+
+                            <video width="640" height="360" controls>
+                                <source src="E:\videos\Y2meta.app - LINUX y GNU_ LINUX_ QUÉ ES y CÓMO FUNCIONA.mp4" type="video/mp4">
+                                
+                        
+                            </video>
+
+                            <p>¿QUE SON PILAS Y COLAS?</p>
+                            <p>Las pilas y colas son estructuras de datos lineales, donde existen restricciones para insertar y eliminar elementos. Son casos particulares de la estructura lista, y se pueden implementar mediante vectores o listas enlazadas.</p>
+                            <p>¿OPERACIONES ELEMENTALES SOBRE PILAS Y COLAS?</p>
+                            <P>Insertar: Push -> apilar (Pila), Queue -> encolar (Cola)
+                                Eliminar: Pop -> desapilar (Pila), Dequeue -> desencolar (Cola)</P>
+                                <p>PILAS</p>
+                                <p>Una Pila o Stack es un caso particular de la lista donde la inserción y eliminación de elementos se realizan solo por un extremo que se denomina cima o tope (top). Funciona exactamente como su nombre lo indica, y con numerosas analogías en la vida real: una pila de libros, una pila de monedas, pila de platos, etc.
+
+                                    Este comportamiento está basado en el principio "último en entrar, primero en salir", también conocido como LIFO, por su nombre en inglés "last-in, first-out", que dicta que el primer elemento que fue añadido a la pila será el último en ser removido de la misma.</p>
+                                    <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--_DfXM08b--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/39h6f6hguqiecj2915dx.png" alt="" srcset="">
+
+                                    <p>COLAS</p>
+                                    <p>Una Cola o Queue es un caso particular de la lista donde la inserción y eliminación de elementos se realizan por los extremos de la lista; las eliminaciones se realizan al principio de la lista, o el frente (front) de la misma, y las inserciones se realizan en el otro extremo, el final (rear). Algunas analogías en la vida real: cola de personas en el banco, cola de vehículos en el semáforo, etc.
+
+                                        Este comportamiento está basado en el principio "primero en entrar, primero en salir", también conocido como FIFO, por su nombre en inglés "first-in, first-out", que dicta que el primer elemento que fue añadido a la cola será el primero en ser removido.</p>
+
+                                        <img src="https://res.cloudinary.com/practicaldev/image/fetch/s---faMO8sy--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_800/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/j87zynigppdrtql0ymjh.png" alt="" srcset="">
+
+                                        <video width="640" height="360" controls>
+                                            <source src="E:\videos\Y2meta.app - Estructuras de Datos y Algoritmos __ PILAS _INTRODUCCIÓN_.mp4" type="video/mp4">
+                                            
+                                    
+                                        </video>
+
+                                        <video width="640" height="360" controls>
+                                            <source src="E:\videos\Y2meta.app - Estructuras de datos – 5. Colas_ teoría.mp4" type="video/mp4">
+                                            
+
+                                            <video>
+                                                <img src="data:image/jpeg;base64,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" alt="" srcset="">
+
+                                        
+
+
+
+
+
+</body>
+</html>
+</div>
+</div>
+         
+         
+             
+                    
